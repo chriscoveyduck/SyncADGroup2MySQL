@@ -1,6 +1,8 @@
 # SyncADGroup2MySQL
-
 This project synchronizes the membership of the Active Directory group `SmtpEnabledUsers` with an Azure MySQL database table. It is designed to support a PostFix Submission service for SMTP 'Send As' permissions.
+
+## Project Origin & Evaluation Note
+This solution was created to test and compare the effectiveness of GitHub Copilot (GHCP) against a similar project previously delivered manually. The goal is to evaluate development effort, automation, and overall productivity using GHCP for this use case.
 
 ## Features
 - Scheduled synchronization (configurable interval)
