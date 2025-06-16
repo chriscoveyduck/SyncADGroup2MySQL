@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: syncadgroup2mysql
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: syncadgroup2mysql
+  template:
+    metadata:
+      labels:
+        app: syncadgroup2mysql
+    spec:
+      containers:
+      - name: syncadgroup2mysql
+        image: <your-docker-image>
+        envFrom:
+        - secretRef:
+            name: syncadgroup-secrets
